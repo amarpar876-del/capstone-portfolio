@@ -71,3 +71,22 @@ ul {
 .project p {
   margin-bottom: 10px;
 }
+.profile-pic {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%; /* makes it circular */
+  display: block;
+  margin-top: 15px;
+}
+section {
+  background-color: #ffffff;
+  max-width: 900px;
+  padding: 25px;
+  margin-bottom: 30px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+#contact a {
+  color: #2563eb;
+  font-weight: bold;
+}
