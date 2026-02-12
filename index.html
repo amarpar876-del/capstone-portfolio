@@ -1,18 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <script>
+    const password = "ndss2026";
+    const userInput = prompt("Enter password to access Portfolio:");
+  
+    if (userInput !== password) {
+      document.body.innerHTML = "<h1 style='text-align:center;margin-top:100px;'>Access Denied</h1>";
+    }
+  </script>  
     <link rel="stylesheet" href="style.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <script>
-      const password = "ndss2026";
-      const userInput = prompt("Enter password to access Portfolio:");
-    
-      if (userInput !== password) {
-        window.location.href = "Access Denied";
-      }
-    </script>    
+    <title>Document</title>    
 </head>
 <body>
     <div> <header>
