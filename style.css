@@ -5,12 +5,7 @@
   box-sizing: border-box;
 }
 
-/* Smooth scrolling */
-html {
-  scroll-behavior: smooth;
-}
-
-/* Global Body */
+/* Body */
 body {
   font-family: "Inter", Arial, sans-serif;
   background-color: #f4f6f8;
@@ -22,8 +17,8 @@ body {
 .site-header {
   text-align: center;
   padding: 60px 20px 30px;
-  background-color: #000000;  /* black header */
-  color: #ffffff;             /* white text */
+  background-color: #000000 !important; /* FORCE black */
+  color: #ffffff !important;           /* FORCE white text */
 }
 
 /* Navbar */
@@ -32,7 +27,7 @@ body {
   justify-content: center;
   gap: 30px;
   padding: 15px;
-  background-color: #1f2933;  /* dark navbar for contrast */
+  background-color: #1f2933;
   position: sticky;
   top: 0;
   z-index: 100;
@@ -41,7 +36,7 @@ body {
 .navbar a {
   text-decoration: none;
   font-weight: 600;
-  color: #ffffff; /* white links */
+  color: #ffffff;
   padding-bottom: 4px;
   transition: color 0.3s, border-bottom 0.3s;
 }
@@ -52,7 +47,7 @@ body {
   color: #2563eb;
 }
 
-/* Main container */
+/* Container */
 .container {
   max-width: 900px;
   margin: 0 auto;
