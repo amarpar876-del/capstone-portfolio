@@ -5,11 +5,12 @@
   box-sizing: border-box;
 }
 
-/* Global */
+/* Smooth scrolling */
 html {
   scroll-behavior: smooth;
 }
 
+/* Body */
 body {
   font-family: "Inter", Arial, sans-serif;
   background-color: #f4f6f8;
@@ -31,7 +32,7 @@ body {
 }
 
 .site-header p {
-  color: #d1d5db;
+  color: #ffffff;
   margin-top: 8px;
 }
 
@@ -41,8 +42,7 @@ body {
   justify-content: center;
   gap: 30px;
   padding: 15px;
-  background-color: #1f2933;
-  border-bottom: 2px solid #2563eb;
+  background-color: #111111;
   position: sticky;
   top: 0;
   z-index: 100;
@@ -56,14 +56,10 @@ body {
 }
 
 .navbar a:hover {
-  color: #2563eb;
-}
-
-.navbar a.active {
   border-bottom: 2px solid #2563eb;
 }
 
-/* Main Layout */
+/* Container */
 .container {
   max-width: 900px;
   margin: 0 auto;
@@ -81,104 +77,29 @@ section {
 
 h2 {
   margin-bottom: 15px;
-  font-size: 28px;
-  color: #111827;
+  font-size: 26px;
 }
 
 /* Lists */
 ul {
   margin-left: 20px;
+  margin-top: 10px;
 }
 
-.hobbies li,
-.skills-list li {
-  margin-bottom: 8px;
-}
-
-/* Skill Bars */
-.skill-bars .skill {
-  margin-bottom: 15px;
-}
-
-.skill-bars .skill span {
-  display: block;
-  margin-bottom: 5px;
-  font-weight: 600;
-}
-
-.skill-bars .bar {
-  width: 100%;
-  height: 15px;
-  background-color: #e5e7eb;
-  border-radius: 8px;
-  overflow: hidden;
-}
-
-.skill-bars .progress {
-  height: 100%;
-  border-radius: 8px;
-}
-
-.skill-bars .progress.python {
-  width: 50%;
-  background-color: #2563eb;
-}
-
-.skill-bars .progress.htmlcss {
-  width: 60%;
-  background-color: #10b981;
-}
-
-.skill-bars .progress.problem {
-  width: 80%;
-  background-color: #f59e0b;
+.hobbies li {
+  margin-bottom: 6px;
 }
 
 /* Project Card */
-.project-card {
-  border: 1px solid #e5e7eb;
-  padding: 20px;
-  border-radius: 10px;
-  margin-bottom: 30px;
-  text-align: center;
-}
-
-.project-card img {
-  max-width: 100%;
-  border-radius: 10px;
-  margin-bottom: 15px;
-}
-
 .project-card h3 {
   color: #2563eb;
   margin-bottom: 10px;
 }
 
-.project-card p {
-  margin-bottom: 10px;
-}
-
-.project-card .view-project {
-  text-decoration: none;
-  color: #ffffff;
-  background-color: #2563eb;
-  padding: 8px 15px;
-  border-radius: 5px;
-}
-
-.project-card .view-project:hover {
-  background-color: #1e40af;
-}
-
-/* Contact */
+/* Contact Links */
 #contact a {
   font-weight: 600;
   color: #2563eb;
-  text-decoration: none;
-}
-
-#contact a:hover {
-  text-decoration: underline;
 }
 
 /* Footer */
