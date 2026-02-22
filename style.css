@@ -21,6 +21,8 @@ body {
 .site-header {
   text-align: center;
   padding: 60px 20px 30px;
+  background-color: #000000; /* black top header */
+  color: #ffffff; /* white text */
 }
 
 .site-header h1 {
@@ -29,7 +31,7 @@ body {
 }
 
 .site-header p {
-  color: #6b7280;
+  color: #d1d5db; /* lighter gray for subtitle */
   margin-top: 8px;
 }
 
@@ -38,9 +40,8 @@ body {
   display: flex;
   justify-content: center;
   gap: 30px;
-  padding: 15px;
-  background-color: #ffffff;
-  border-bottom: 1px solid #e5e7eb;
+  padding: 15px 0;
+  background-color: #000000; /* black navbar */
   position: sticky;
   top: 0;
   z-index: 100;
@@ -49,15 +50,18 @@ body {
 .navbar a {
   text-decoration: none;
   font-weight: 600;
-  color: #2563eb;
-  padding-bottom: 4px;
+  color: #ffffff; /* white links */
+  padding: 4px 0;
+  transition: color 0.3s, border-bottom 0.3s;
 }
 
+.navbar a:hover,
 .navbar a.active {
+  color: #2563eb; /* blue hover */
   border-bottom: 2px solid #2563eb;
 }
 
-/* Layout */
+/* Container for content */
 .container {
   max-width: 900px;
   margin: 0 auto;
@@ -67,36 +71,58 @@ body {
 /* Sections */
 section {
   background-color: #ffffff;
-  padding: 30px;
-  border-radius: 10px;
+  padding: 35px 30px;
+  border-radius: 12px;
   margin-bottom: 40px;
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.06);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.07);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+section:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.1);
 }
 
 h2 {
-  margin-bottom: 15px;
-  font-size: 26px;
+  margin-bottom: 20px;
+  font-size: 28px;
+  color: #111827;
 }
 
 /* Lists */
-ul {
+ul, ol {
   margin-left: 20px;
 }
 
-.hobbies li {
-  margin-bottom: 6px;
+ul li, ol li {
+  margin-bottom: 8px;
+}
+
+/* Hobbies / Skills */
+.hobbies li, .skills li {
+  margin-bottom: 8px;
 }
 
 /* Project Card */
 .project-card h3 {
   color: #2563eb;
-  margin-bottom: 10px;
+  margin-bottom: 12px;
+}
+
+.project-card p {
+  margin-bottom: 12px;
+  color: #374151;
 }
 
 /* Contact */
 #contact a {
   font-weight: 600;
   color: #2563eb;
+  text-decoration: none;
+}
+
+#contact a:hover {
+  text-decoration: underline;
 }
 
 /* Footer */
@@ -105,4 +131,16 @@ footer {
   padding: 20px;
   color: #6b7280;
   font-size: 14px;
+  border-top: 1px solid #e5e7eb;
+  margin-top: 40px;
+}
+
+/* Profile picture (if you want to add one) */
+.profile-pic {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  display: block;
+  margin: 15px auto;
+  border: 3px solid #2563eb; /* subtle border for style */
 }
