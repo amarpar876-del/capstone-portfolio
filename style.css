@@ -96,10 +96,24 @@ ul {
   margin-bottom: 10px;
 }
 
-/* Contact Links */
-#contact a {
+/* Contact links list */
+.contact-links {
+  list-style: none;
+  padding-left: 0;
+}
+
+.contact-links li {
+  margin-bottom: 8px;
+}
+
+.contact-links a {
   font-weight: 600;
   color: #2563eb;
+  text-decoration: none;
+}
+
+.contact-links a:hover {
+  text-decoration: underline;
 }
 
 /* Footer */
